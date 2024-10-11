@@ -104,3 +104,9 @@ watch "kubectl get all"
 ```
 http://192.168.15.14:30003/
 ```
+
+### to remove site:
+
+```
+rke remove
+```
