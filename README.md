@@ -98,3 +98,9 @@ watch "kubectl get all"
 ```
 
 [looping of "get all"](https://github.com/jrmreis/rancher-vagrant/blob/main/returnOfGetAll.txt)
+
+### to open site nodes at browser:
+
+```
+http://192.168.15.14:30003/
+```
