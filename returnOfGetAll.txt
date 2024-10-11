@@ -1,0 +1,13 @@
+NAME                                         READY   STATUS    RESTARTS   AGE
+pod/conversao-temperatura-5dd8cf6869-j58rf   1/1     Running   0          5m13s
+pod/conversao-temperatura-5dd8cf6869-zrrnt   1/1     Running   0          5m13s
+
+NAME                            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+service/conversao-temperatura   NodePort    10.43.239.140   <none>        8080:30003/TCP   5m13s
+service/kubernetes              ClusterIP   10.43.0.1       <none>        443/TCP          31m
+
+NAME                                    READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/conversao-temperatura   2/2     2            2           5m13s
+
+NAME                                               DESIRED   CURRENT   READY   AGE
+replicaset.apps/conversao-temperatura-5dd8cf6869   2         2         2       5m13s
