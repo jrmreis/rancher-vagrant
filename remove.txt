@@ -1,0 +1,75 @@
+INFO[0000] Running RKE version: v1.6.2                  
+Are you sure you want to remove Kubernetes cluster [y/n]: y
+INFO[0003] Tearing down Kubernetes cluster              
+INFO[0003] [dialer] Setup tunnel for host [192.168.15.15] 
+INFO[0003] [dialer] Setup tunnel for host [192.168.15.14] 
+INFO[0005] [worker] Tearing down Worker Plane..         
+INFO[0005] Removing container [kubelet] on host [192.168.15.14], try #1 
+INFO[0005] Removing container [kubelet] on host [192.168.15.15], try #1 
+INFO[0005] [remove/kubelet] Successfully removed container on host [192.168.15.14] 
+INFO[0005] Removing container [kube-proxy] on host [192.168.15.14], try #1 
+INFO[0005] [remove/kubelet] Successfully removed container on host [192.168.15.15] 
+INFO[0005] Removing container [kube-proxy] on host [192.168.15.15], try #1 
+INFO[0005] [remove/kube-proxy] Successfully removed container on host [192.168.15.14] 
+INFO[0005] Removing container [service-sidekick] on host [192.168.15.14], try #1 
+INFO[0005] [remove/service-sidekick] Successfully removed container on host [192.168.15.14] 
+INFO[0005] [remove/kube-proxy] Successfully removed container on host [192.168.15.15] 
+INFO[0005] Removing container [nginx-proxy] on host [192.168.15.15], try #1 
+INFO[0005] [remove/nginx-proxy] Successfully removed container on host [192.168.15.15] 
+INFO[0005] Removing container [service-sidekick] on host [192.168.15.15], try #1 
+INFO[0005] [remove/service-sidekick] Successfully removed container on host [192.168.15.15] 
+INFO[0005] [worker] Successfully tore down Worker Plane.. 
+INFO[0005] [controlplane] Tearing down the Controller Plane.. 
+INFO[0005] Removing container [kube-apiserver] on host [192.168.15.14], try #1 
+INFO[0006] [remove/kube-apiserver] Successfully removed container on host [192.168.15.14] 
+INFO[0006] Removing container [kube-controller-manager] on host [192.168.15.14], try #1 
+INFO[0006] [remove/kube-controller-manager] Successfully removed container on host [192.168.15.14] 
+INFO[0006] Removing container [kube-scheduler] on host [192.168.15.14], try #1 
+INFO[0006] [remove/kube-scheduler] Successfully removed container on host [192.168.15.14] 
+INFO[0006] [controlplane] Successfully tore down Controller Plane.. 
+INFO[0006] [etcd] Tearing down etcd plane..             
+INFO[0006] Removing container [etcd] on host [192.168.15.14], try #1 
+INFO[0006] [remove/etcd] Successfully removed container on host [192.168.15.14] 
+INFO[0006] Removing container [etcd-rolling-snapshots] on host [192.168.15.14], try #1 
+INFO[0006] [remove/etcd-rolling-snapshots] Successfully removed container on host [192.168.15.14] 
+INFO[0006] [etcd] Successfully tore down etcd plane..   
+INFO[0006] [hosts] Cleaning up host [192.168.15.14]     
+INFO[0006] [hosts] Cleaning up host [192.168.15.14]     
+INFO[0006] [hosts] Cleaning up host [192.168.15.15]     
+INFO[0006] [hosts] Cleaning up host [192.168.15.15]     
+INFO[0006] [hosts] Running cleaner container on host [192.168.15.15] 
+INFO[0006] [hosts] Running cleaner container on host [192.168.15.14] 
+INFO[0006] Image [rancher/rke-tools:v0.1.102] exists on host [192.168.15.15] 
+INFO[0006] Image [rancher/rke-tools:v0.1.102] exists on host [192.168.15.14] 
+INFO[0006] Starting container [kube-cleaner] on host [192.168.15.14], try #1 
+INFO[0007] [kube-cleaner] Successfully started [kube-cleaner] container on host [192.168.15.14] 
+INFO[0007] Waiting for [kube-cleaner] container to exit on host [192.168.15.14] 
+INFO[0007] Container [kube-cleaner] is still running on host [192.168.15.14]: stderr: [find: /var/run/calico/cgroup/kubepods/besteffort/podae1db05a-aa01-49e1-87cd-c130610a19dd/1409c29294dbaeeca7ea05aa6c1c8492136d9c35d6322c81d8cf3be7c2bb065b/cgroup.events: Operation not permitted
+], stdout: [] 
+INFO[0007] Starting container [kube-cleaner] on host [192.168.15.15], try #1 
+INFO[0007] [kube-cleaner] Successfully started [kube-cleaner] container on host [192.168.15.15] 
+INFO[0007] Waiting for [kube-cleaner] container to exit on host [192.168.15.15] 
+INFO[0007] Container [kube-cleaner] is still running on host [192.168.15.15]: stderr: [], stdout: [] 
+INFO[0008] [hosts] Removing cleaner container on host [192.168.15.14] 
+INFO[0008] Removing container [kube-cleaner] on host [192.168.15.14], try #1 
+INFO[0008] [hosts] Removing dead container logs on host [192.168.15.14] 
+INFO[0008] Image [rancher/rke-tools:v0.1.102] exists on host [192.168.15.14] 
+INFO[0008] Starting container [rke-log-cleaner] on host [192.168.15.14], try #1 
+INFO[0008] [cleanup] Successfully started [rke-log-cleaner] container on host [192.168.15.14] 
+INFO[0008] Removing container [rke-log-cleaner] on host [192.168.15.14], try #1 
+INFO[0008] [hosts] Removing cleaner container on host [192.168.15.15] 
+INFO[0008] Removing container [kube-cleaner] on host [192.168.15.15], try #1 
+INFO[0008] [hosts] Removing dead container logs on host [192.168.15.15] 
+INFO[0008] Image [rancher/rke-tools:v0.1.102] exists on host [192.168.15.15] 
+INFO[0008] [remove/rke-log-cleaner] Successfully removed container on host [192.168.15.14] 
+INFO[0008] [hosts] Successfully cleaned up host [192.168.15.14] 
+INFO[0009] Starting container [rke-log-cleaner] on host [192.168.15.15], try #1 
+INFO[0009] [cleanup] Successfully started [rke-log-cleaner] container on host [192.168.15.15] 
+INFO[0009] Removing container [rke-log-cleaner] on host [192.168.15.15], try #1 
+INFO[0009] [remove/rke-log-cleaner] Successfully removed container on host [192.168.15.15] 
+INFO[0009] [hosts] Successfully cleaned up host [192.168.15.15] 
+INFO[0009] Removing local admin Kubeconfig: ./kube_config_cluster.yml 
+INFO[0009] Local admin Kubeconfig removed successfully  
+INFO[0009] Removing state file: ./cluster.rkestate      
+INFO[0009] State file removed successfully              
+INFO[0009] Cluster removed successfully 
