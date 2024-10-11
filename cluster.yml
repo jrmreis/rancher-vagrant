@@ -1,0 +1,18 @@
+cluster_name: rkelearning
+network:
+  plugin: canal
+  options:
+    canal_iface: enp0s8
+nodes:
+    - address: 192.168.15.16
+      user: vagrant
+      role:
+        - controlplane
+        - etcd
+        - worker
+      ssh_key_path: /home/joel/learn-vagrant-docker-container/rke1-learning/RKE1-setup/.vagrant/machines/kmaster/virtualbox/private_key
+    - address: 192.168.15.20
+      user: vagrant
+      role:
+        - worker
+      ssh_key_path: /home/joel/learn-vagrant-docker-container/rke1-learning/RKE1-setup/.vagrant/machines/kworker1/virtualbox/private_key
