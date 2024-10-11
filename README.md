@@ -73,4 +73,21 @@ rke up
 [Tipical start-up Log](https://github.com/jrmreis/rancher-vagrant/blob/main/stdClusterLog.txt)
 
 
+### to copy kubernetes config cluster:
+
+```
+cp kube_config_cluster.yml ~/.kube/config
+```
+
+### to check kubernetes nodes in cluster:
+
+```
+kubectl get node
+```
+```
+NAME            STATUS   ROLES                      AGE   VERSION
+192.168.15.14   Ready    controlplane,etcd,worker   17m   v1.30.4
+192.168.15.15   Ready    worker                     17m   v1.30.4
+
+```
 
