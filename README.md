@@ -91,3 +91,10 @@ NAME            STATUS   ROLES                      AGE   VERSION
 
 ```
 
+### to deploy kubernetes nodes in cluster:
+
+```
+watch "kubectl get all"
+```
+
+[looping of "get all"](https://github.com/jrmreis/rancher-vagrant/blob/main/returnOfGetAll.txt)
