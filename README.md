@@ -158,6 +158,7 @@ http://192.168.15.14:30003/
 ```
 kubectl rollout undo deployment <>
 ```
+[more info in Kubernetes docs](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/kubectl_rollout_undo/)
 
 ### to remove the kubernete cluster:
 
