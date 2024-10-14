@@ -91,7 +91,13 @@ NAME            STATUS   ROLES                      AGE   VERSION
 
 ```
 
-### to deploy kubernetes nodes in cluster:
+### to deploy in kubernetes nodes in the cluster:
+
+```
+kubectl apply -f deployment.yaml
+```
+
+### to monitor kubernetes deployment in cluster nodes:
 
 ```
 watch "kubectl get all"
@@ -104,8 +110,15 @@ watch "kubectl get all"
 ```
 http://192.168.15.14:30003/
 ```
+[App is running at node and port explicit in cluster.yml](https://github.com/jrmreis/rancher-vagrant/blob/main/Captura%20de%20tela%20de%202024-10-13%2022-02-01.png)
 
-### to remove site:
+### to roll back, follow the cmd below:
+
+```
+kubectl rollout undo deployment <>
+```
+
+### to remove the kubernete cluster:
 
 ```
 rke remove
