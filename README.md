@@ -34,6 +34,10 @@ sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.0.vbox-e
 ### Install Vagrant:
 
 
+### Install Kubernetes:
+
+[Install Kubernetes](https://github.com/jrmreis/cheatsheet/blob/main/CLI/kubernetes.md#install-kubernetes)
+
 
 ### Install Rancher (rke):
 
